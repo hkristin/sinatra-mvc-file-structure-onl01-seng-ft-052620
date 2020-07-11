@@ -1,7 +1,9 @@
 class Dog
   
   attr_accessor :name, :breed, :age
-  @all = app
+  
+  @all = all
+  
   def initialize 
     @name = name
     @breed = breed
@@ -9,4 +11,6 @@ class Dog
   end
   
   def self.all
+    self << @all
+  end
 end
